@@ -12,9 +12,7 @@
 
 ---
 
-## 🌟 实习亮点 (Internship Highlights)
-
-针对暑期实习申请，本项目展示了以下核心竞争力：
+## 🌟 技术亮点 (Internship Highlights)
 
 - **多智能体协同编排 (Multi-Agent Orchestration)**：
   - 设计并实现了一套基于 `FastAPI` 的任务调度系统，将复杂的长文本创作任务解耦为 5 个独立智能体（标题、大纲、正文、图像、合成）。
@@ -157,9 +155,9 @@ npm run dev
 
 ## 👤 作者 (Author)
 
-- **FurinaLuna**
+- **FurinaLuna**:[blog](furinaluna.top)
 - **GitHub**: [FurinaLuna](https://github.com/FurinaLuna)
-- **Email**: [your-email@example.com]
+- **Email**: QQ: [2517523791@qq.com] Gmail:[furinalunaz@gmail.com]
 
 ---
 
