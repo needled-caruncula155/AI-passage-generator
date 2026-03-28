@@ -1,4 +1,4 @@
-# AI 爆款文章创作器 (AI Passage Creator) 🚀
+# AI 爆文生成器 (AI Passage Creator) 🚀
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115.0-009688.svg?style=flat&logo=fastapi)](https://fastapi.tiangolo.com/)
