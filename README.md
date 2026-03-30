@@ -122,21 +122,6 @@ npm run dev
 
 ---
 
-## 🔗 核心 API 示例 (Core API Usage)
-
-### 文章生成任务 (SSE)
-`POST /api/article/generate`
-```json
-{
-  "topic": "未来人工智能的发展趋势",
-  "style": "professional",
-  "language": "zh-CN"
-}
-```
-*响应：实时推送 `SseMessageTypeEnum` 包含的任务状态。*
-
----
-
 ## 🤝 贡献指南 (Contributing)
 
 1. **Fork** 本仓库。
