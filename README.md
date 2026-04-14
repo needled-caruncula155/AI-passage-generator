@@ -1,4 +1,4 @@
-# AI 爆款文章创作器 (AI Passage Creator) 🚀
+# AI 爆文生成器 (AI Passage Creator) 🚀
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115.0-009688.svg?style=flat&logo=fastapi)](https://fastapi.tiangolo.com/)
@@ -53,7 +53,6 @@
 - 🤖 **全自动创作流**：从一个想法到包含配图、大纲、专业排版的万字长文，仅需 2 分钟。
 - ⚡ **实时生成进度**：SSE 技术支持，用户可实时观察每一个智能体的思考与创作过程。
 - 🖼️ **智能配图系统**：自动分析文章语境，生成或搜索匹配的插图、流程图 (Mermaid) 或 SVG 图形。
-- 📊 **多维数据分析**：后台提供详细的用户行为画像、生成成功率统计及财务报表。
 - 💳 **会员订阅体系**：完整的 VIP 等级与 Stripe 支付集成，支持额度限制与自动升级。
 - 📱 **响应式设计**：适配 PC 与移动端，随时随地开启创作。
 
@@ -120,21 +119,6 @@ cd frontend
 npm install
 npm run dev
 ```
-
----
-
-## 🔗 核心 API 示例 (Core API Usage)
-
-### 文章生成任务 (SSE)
-`POST /api/article/generate`
-```json
-{
-  "topic": "未来人工智能的发展趋势",
-  "style": "professional",
-  "language": "zh-CN"
-}
-```
-*响应：实时推送 `SseMessageTypeEnum` 包含的任务状态。*
 
 ---
 
